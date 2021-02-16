@@ -10,11 +10,26 @@
 		transaction-type="JTA">
 		<!-- Use the Hibernate OGM provider: configuration will be transparent -->
 		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+
 		<properties>
 			<!-- Here you will pick which NoSQL technology to use, and configure it; 
 				in this example we start a local in-memory Infinispan node. -->
+
 			<property name="hibernate.ogm.datastore.provider"
-				value="infinispan" />
+				value="mongodb" />
+			<property name="hibernate.ogm.datastore.grid_dialect"
+				value="org.hibernate.ogm.datastore.mongodb.MongoDBDialect" />
+			<property name="hibernate.ogm.datastore.database"
+				value="app" />
+			<property name="hibernate.ogm.datastore.host"
+				value="cluster0.u7kax.mongodb.net" />
+			<property name="hibernate.ogm.datastore.port" value="27017" />
+			<property name="hibernate.ogm.datastore.username"
+				value="douglas" />
+			<property name="hibernate.ogm.datastore.password"
+				value="UmaSuperSenha" />
+
+
 		</properties>
 	</persistence-unit>
 
