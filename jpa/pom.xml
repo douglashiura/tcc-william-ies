@@ -21,7 +21,7 @@
 
 
 	<build>
-		<finalName>comexchain</finalName>
+		<finalName>jpa</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

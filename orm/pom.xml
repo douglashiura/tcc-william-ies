@@ -43,7 +43,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>comexchain</finalName>
+		<finalName>orm</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
